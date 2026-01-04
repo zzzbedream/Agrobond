@@ -24,12 +24,12 @@
 graph TD
     User[Farmer/SME] -->|1. Upload Invoice| Frontend
     Frontend -->|2. Analyze Data| AI_Engine[Off-Chain AI Risk Engine]
-    AI_Engine -->|3. Generate Score & Signature| Oracle[AgroRiskOracle]
+    AI_Engine -->|3. Generate Score and Signature| Oracle[AgroRiskOracle]
     User -->|4. Mint Bond| AgroBond[AgroBond Contract]
     AgroBond -->|5. Verify Signature| Oracle
     AgroBond -->|6. Mint Tokens| Wallet[User Wallet]
     Wallet -->|7. Sell Senior Bond| Pool[LiquidityPool]
-    Pool -->|8. Pay Stablecoin (mETH)| Wallet
+    Pool -->|8. Pay Stablecoin mETH| Wallet
 ```
 
 ---
